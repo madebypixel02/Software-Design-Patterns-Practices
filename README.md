@@ -1,5 +1,5 @@
 # Software Design Practices
-*Software Design Practices 📐:*
+*Software Design Practices 📐*
 
 ## CATs
 
