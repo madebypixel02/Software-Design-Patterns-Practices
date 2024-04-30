@@ -2,26 +2,26 @@
 Alejandro Pérez Bueno
 Apr 30, 2024
 
-- [Question 1](#question-1)
-  - [a)](#a)
-  - [b)](#b)
-- [Question 2](#question-2)
-  - [a)](#a-1)
-  - [b)](#b-1)
-  - [c)](#c)
-- [Question 3](#question-3)
-  - [a)](#a-2)
-  - [b)](#b-2)
-- [Question 4](#question-4)
-  - [a)](#a-3)
-  - [b)](#b-3)
-- [Question 5](#question-5)
-  - [a)](#a-4)
-  - [b)](#b-4)
-- [Question 6](#question-6)
-  - [a)](#a-5)
-  - [b)](#b-5)
-  - [c)](#c-1)
+-   [Question 1](#question-1)
+    -   [a)](#a)
+    -   [b)](#b)
+-   [Question 2](#question-2)
+    -   [a)](#a-1)
+    -   [b)](#b-1)
+    -   [c)](#c)
+-   [Question 3](#question-3)
+    -   [a)](#a-2)
+    -   [b)](#b-2)
+-   [Question 4](#question-4)
+    -   [a)](#a-3)
+    -   [b)](#b-3)
+-   [Question 5](#question-5)
+    -   [a)](#a-4)
+    -   [b)](#b-4)
+-   [Question 6](#question-6)
+    -   [a)](#a-5)
+    -   [b)](#b-5)
+    -   [c)](#c-1)
 
 
 
@@ -46,7 +46,10 @@ other packages or individual object classes.
 
 ### b)
 
-![Static Analysis Diagram](./img/q1b.png)
+<figure>
+<img src="./img/q1b.png" alt="Static Analysis Diagram" />
+<figcaption aria-hidden="true">Static Analysis Diagram</figcaption>
+</figure>
 
 Attributes:
 
@@ -82,7 +85,10 @@ the period during which they were assigned.
 
 ### b)
 
-![Static Analysis Diagram](./img/q2b.png)
+<figure>
+<img src="./img/q2b.png" alt="Static Analysis Diagram" />
+<figcaption aria-hidden="true">Static Analysis Diagram</figcaption>
+</figure>
 
 Attributes:
 
@@ -141,30 +147,36 @@ class to the low-level class, which goes against the DIP.
 
 Interface Segregation Principle (ISP):
 
-- Create distinct interfaces for specific operation types.
-- For instance, define ‘IProjectDatabaseOperations’ with ‘saveProject’
-  and ‘modifyProject’ methods, ‘IClassDatabaseOperations’ with
-  ‘saveClass’ and ‘modifyClass’ methods, and so on.
-- Client classes will only depend on the interfaces relevant to their
-  operations.
+-   Create distinct interfaces for specific operation types.
+-   For instance, define ‘IProjectDatabaseOperations’ with ‘saveProject’
+    and ‘modifyProject’ methods, ‘IClassDatabaseOperations’ with
+    ‘saveClass’ and ‘modifyClass’ methods, and so on.
+-   Client classes will only depend on the interfaces relevant to their
+    operations.
 
 Dependency Inversion Principle (DIP):
 
-- Introduce an abstraction layer between high-level classes (e.g.,
-  Project, Class, Bug) and the low-level DataBase class.
-- Create interfaces (as described above) and have high-level classes
-  depend on these interfaces instead of the concrete DataBase class.
-- The DataBase class will implement the defined interfaces.
+-   Introduce an abstraction layer between high-level classes (e.g.,
+    Project, Class, Bug) and the low-level DataBase class.
+-   Create interfaces (as described above) and have high-level classes
+    depend on these interfaces instead of the concrete DataBase class.
+-   The DataBase class will implement the defined interfaces.
 
 ### b)
 
-![Static Analysis Diagram](./img/q4b.png)
+<figure>
+<img src="./img/q4b.png" alt="Static Analysis Diagram" />
+<figcaption aria-hidden="true">Static Analysis Diagram</figcaption>
+</figure>
 
 ## Question 5
 
 ### a)
 
-![Static Analysis Diagram](./img/q5a.png)
+<figure>
+<img src="./img/q5a.png" alt="Static Analysis Diagram" />
+<figcaption aria-hidden="true">Static Analysis Diagram</figcaption>
+</figure>
 
 ### b)
 
@@ -201,16 +213,16 @@ else:
 
 Technical Services Layer (Data Layer):
 
-- Exercise 4:
-  - DataBase: This class directly interacts with the data storage and
-    retrieval mechanisms, clearly placing it in the data layer.
-  - IProjectDatabaseOperations and IClassDatabaseOperations: These
-    interfaces define operations for data access related to projects and
-    classes, making them part of the data layer.
-- Exercise 5:
-  - Data Access Classes: While not explicitly shown, classes responsible
-    for interacting with the database to retrieve and manipulate Bug,
-    Developer, and related data would reside here.
+-   Exercise 4:
+    -   DataBase: This class directly interacts with the data storage
+        and retrieval mechanisms, clearly placing it in the data layer.
+    -   IProjectDatabaseOperations and IClassDatabaseOperations: These
+        interfaces define operations for data access related to projects
+        and classes, making them part of the data layer.
+-   Exercise 5:
+    -   Data Access Classes: While not explicitly shown, classes
+        responsible for interacting with the database to retrieve and
+        manipulate Bug, Developer, and related data would reside here.
 
 The data layer houses classes and interfaces that handle data
 persistence, retrieval, and manipulation. These elements interact
@@ -220,15 +232,15 @@ directly with databases, file systems, or other data sources.
 
 Domain Layer (Business Logic):
 
-- Exercise 1:
-  - Project, Package, and Class: These classes represent core business
-    entities and their relationships within the software development
-    domain.
-- Exercise 2:
-  - Bug, Project, Employee, Developer, and Priority: These classes
-    represent entities and concepts central to the bug tracking and
-    project management domain. They encapsulate business rules and
-    logic.
+-   Exercise 1:
+    -   Project, Package, and Class: These classes represent core
+        business entities and their relationships within the software
+        development domain.
+-   Exercise 2:
+    -   Bug, Project, Employee, Developer, and Priority: These classes
+        represent entities and concepts central to the bug tracking and
+        project management domain. They encapsulate business rules and
+        logic.
 
 The domain layer contains classes representing the core business
 entities, their attributes, and the relationships between them. It
@@ -239,13 +251,13 @@ is stored or presented.
 
 Presentation Layer (User Interface):
 
-- Exercise 5:
-  - AssignBugView: This class is responsible for displaying information
-    to the user and capturing user interactions related to bug
-    assignment.
-  - AssignDeveloperController: This class handles user input, interacts
-    with the domain layer to process business logic, and updates the
-    view accordingly.
+-   Exercise 5:
+    -   AssignBugView: This class is responsible for displaying
+        information to the user and capturing user interactions related
+        to bug assignment.
+    -   AssignDeveloperController: This class handles user input,
+        interacts with the domain layer to process business logic, and
+        updates the view accordingly.
 
 The presentation layer consists of classes responsible for user
 interaction, including displaying information, capturing input, and
