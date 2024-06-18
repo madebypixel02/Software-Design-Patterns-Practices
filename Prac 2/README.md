@@ -1,4 +1,4 @@
-# Prac 1
+# Prac 2
 Alejandro Pérez Bueno
 Jun 18, 2024
 

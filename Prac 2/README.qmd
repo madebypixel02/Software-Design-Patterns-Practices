@@ -1,6 +1,6 @@
 ---
-title: "Prac 1"
-subtitle: "Design principles, analysis and architectural patterns"
+title: "Prac 2"
+subtitle: "Design and Responsibility Assignment Patterns"
 author: Alejandro Pérez Bueno
 date: today
 date-format: "MMM DD, YYYY"
