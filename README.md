@@ -10,3 +10,4 @@
 ## PRs
 
 - [Prac 1](./Prac%201)
+- [Prac 2](./Prac%202)
